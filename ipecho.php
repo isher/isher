@@ -1,6 +1,6 @@
 <body topmargin='0' leftmargin='0'>
 <?php
-function getip() /*获取客户端IP*/
+function getip() /*以浏览者角度，查询自己当前IP地址----获取客户端IP*/
 {
 if (@$_SERVER["HTTP_X_FORWARDED_FOR"]){ //跳过代理获取客户端IP
 $ip = $_SERVER["HTTP_X_FORWARDED_FOR"];

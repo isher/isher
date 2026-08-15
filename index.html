@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="baidu-site-verification" content="code-u65a9SUkPG" />
-    <meta name="google-site-verification" content="iY1M43ABLW-yAxDBL0F1uExIhifv5mfW08DWqoi_kOg" />
     <link rel="icon" type="image/png" href="https://swbj.qsis.cn/upload/images/favicon.ico">
     <meta property="og:site_name" content="深思笔记">
     <meta property="og:type" content="website">
@@ -152,97 +151,7 @@
 </div>
 
 
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
 
-
-<script>
-const prev = document.getElementById('prev')
-const next = document.getElementById('next')
-const curr = document.getElementById('curr')
-let page = 1
-const max = 3
-
-function update(){
-  prev.disabled = page === 1
-  next.disabled = page === max
-  curr.textContent = page
-}
-
-prev.onclick = () => { page--; update() }
-next.onclick = () => { page++; update() }
-update()
-</script>
-<script>
-// 加载搜索索引
-let searchIndex = [];
-
-async function loadSearchIndex() {
-  try {
-    const res = await fetch('/search-index.json');
-    searchIndex = await res.json();
-    console.log(`已加载 ${searchIndex.length} 篇文章用于搜索`);
-  } catch (err) {
-    console.error('搜索索引加载失败', err);
-  }
-}
-
-// 执行搜索
-function doSearch(keyword) {
-  const resultBox = document.getElementById('search-result');
-  resultBox.innerHTML = '';
-
-  if (!keyword.trim()) {
-    return;
-  }
-
-  const kw = keyword.toLowerCase();
-  const matched = searchIndex.filter(item => {
-    const title = (item.title || '').toLowerCase();
-    const content = (item.content || '').toLowerCase();
-    return title.includes(kw) || content.includes(kw);
-  });
-
-  if (matched.length === 0) {
-    resultBox.innerHTML = '<div class="no-result">没有找到相关文章</div>';
-    return;
-  }
-
-  let html = '';
-  matched.forEach(item => {
-    html += `
-<div class="search-item">
-  <a href="${item.url}" target="_blank">${item.title}</a>
-  <div class="desc">${item.content.substring(0, 120)}...</div>
-</div>
-    `;
-  });
-
-  resultBox.innerHTML = html;
-}
-
-// 初始化
-document.addEventListener('DOMContentLoaded', () => {
-  loadSearchIndex();
-
-  const input = document.getElementById('search-input');
-  input.addEventListener('input', e => {
-    doSearch(e.target.value);
-  });
-});
-</script>
-<script>
-$(function(){
-    $('.qrcode').each(function(){
-        $(this).qrcode({
-            text: $(this).data('url'),
-            width: 100,
-            height: 100,
-            draw: false  
-        });
-    });
-});
-</script>
 <script>setTimeout(()=>{window.location.replace("https://swbj.qsis.cn");},10000);</script>
 </body>
 </html>

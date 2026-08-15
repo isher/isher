@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 301 跳转推荐：服务端配置 > meta refresh，实在只能用标签就保留 1秒跳转 -->
+    <meta http-equiv="refresh" content="10;url=https://swbj.qsis.cn">
+    <link rel="canonical" href="https://swbj.qsis.cn">
+    <!-- 修正description拼写，统一名称 -->
+    <meta name="description" content="原深思笔记已正式合并为深悟笔记，欢迎访问新站点">
+    <title>深思笔记已合并为深悟笔记</title>
+    <!-- 保留必要验证、图标、基础兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="baidu-site-verification" content="code-u65a9SUkPG" />
+    <meta name="google-site-verification" content="iY1M43ABLW-yAxDBL0F1uExIhifv5mfW08DWqoi_kOg" />
+    <link rel="icon" type="image/png" href="https://swbj.qsis.cn/upload/images/favicon.ico">
+    <!-- 社交标签只保留一组正确图片 -->
+    <meta property="og:site_name" content="深悟笔记">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://swbj.qsis.cn/logo.png">
+	<link rel="stylesheet" href="https://swbj.qsis.cn/files/theme/default/style.css">
+    <meta property="og:type" content="website">
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<div class="header-top">
+  <div class="container">
+    <div>深悟笔记官方平台</div>
+    <div class="top-nav">
+<div class="submenu"><ul><li><a href="http://qsis.cn" target="_blank">总站首页</a></li><li><a href="https://swbj.qsis.cn/weiqi/" target="_blank">围棋</a></li><li><a href="https://swbj.qsis.cn/contact.html" target="_self">联系</a></li><li><a href="https://swbj.qsis.cn/shenwubiji.html" target="_self">关于</a></li><li><a href="https://swbj.qsis.cn/archive.html" target="_blank">存档</a></li><li><a href="https://swbj.qsis.cn/qiaoshuo.html" target="_blank">作者</a></li><li><a href="https://swbj.qsis.cn/qsis.html" target="_blank">QsisCMS</a></li></ul></div>    </div>
+  </div>
+</div>
+
+<!-- LOGO + 搜索 -->
+<div class="header-main">
+  <div class="container">
+    <div class="logo"><a href="https://swbj.qsis.cn" class="logo">深悟笔记｜原创文章站</a></div>
+    <div class="search-box">
+    	 <input type="text" id="search-input" placeholder="请输入关键词搜索" autocomplete="off">
+      <button>搜索</button>
+    </div>
+  </div>
+</div>
+
+<!-- 主导航（带点击效果） -->
+<div class="main-nav">
+  <div class="container">
+<div class="menu-main"><ul><li><a href="https://swbj.qsis.cn/" target="_self">首页</a></li><li><a href="https://swbj.qsis.cn/tag/格物思理/" target="_self">格物思理</a></li><li><a href="https://swbj.qsis.cn/tag/认知心理/" target="_blank">认知心理</a></li><li><a href="https://swbj.qsis.cn/tag/人生成长/" target="_blank">人生成长</a></li><li><a href="https://swbj.qsis.cn/tag/人文笔记/" target="_blank">人文笔记</a></li></ul></div>  </div>
+</div>
+<div class="container">
+  <div id="search-result"></div>
+ </div>    <style>
+
+        /* 顶部导航栏（和现有页面一致） */
+
+        /* 主体内容区 */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .containerb {
+            background: #ffffff;
+            border-radius: 4px;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .error-code {
+            font-size: 32px;
+            font-weight: bold;
+            color: #6B8088;
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+        .error-title {
+            font-size: 32px;
+            color: #333333;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .error-desc {
+            font-size: 18px;
+            color: #555555;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 35px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        /* 主按钮：暖棕填充（匹配现有页面主色） */
+        .btn-primary {
+            background: #6B8088;
+            color: #ffffff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #92aeb9;
+        }
+        /* 次按钮：暖棕边框 */
+        .btn-outline {
+            background: transparent;
+            color: #6B8088;
+            border: 2px solid #6B8088;
+        }
+        .btn-outline:hover {
+            background: rgba(153, 85, 34, 0.05);
+        }
+
+    </style>
+    <!-- 404主体内容 -->
+    <main>
+        <div class="containerb">
+            <div class="error-code">深思笔记 已与 深悟笔记 合并 </div>
+            <div class="error-title">
+深思笔记：观世事、悟本质。<br>
+深悟笔记：思有度、行有矩。<br> 
+过渡已完成。<br>新域名<a href=https://swbj.qsis.cn>https://swbj.qsis.cn</a>
+			</div>
+            <div class="btn-group">
+                <a href="https://swbj.qsis.cn/" class="btn btn-primary">返回首页</a>
+                <a href="https://swbj.qsis.cn/tag/人文笔记/" class="btn btn-outline">浏览文章</a>
+            </div>
+        </div>
+    </main>
+</div>
+<!-- 底部 -->
+
+<div class="friend-link">
+  <div class="container">
+  	 <h3 class="list-title">友情链接</h3>
+<div class="friend-links">
+
+<a href="https://d.qsis.cn/" target="_blank">Qsis下载器</a><a href="https://ruiyarisheng.com" target="_blank">瑞雅日盛装饰</a><a href="http://game.qsis.cn" target="_blank">骑士游戏</a><a href="http://www.npc.gov.cn/" target="_blank">人民代表大会</a><a href="https://www.qsis.cn" target="_blank">Qsis.cn</a><a href="http://isher.qsis.cn" target="_blank">Isher.qsis.cn</a><a href="https://flk.npc.gov.cn/" target="_blank">国家法律法规数据库</a><a href="https://www.gov.cn/zhengce/xxgk/gjgzk/index.htm" target="_blank">国家规章库</a><a href="https://www.gsxt.gov.cn/" target="_blank">国家企业信用信息公示系统</a><a href="https://ailegal.baidu.com/" target="_blank">法律AI法行宝</a><a href="https://console.letsencrypt.top/" target="_blank">SSL证书</a><a href="https://pdc.capub.cn/" target="_blank">ISBN图书查询</a></div>
+</div>
+
+<div class="footer">
+	
+	
+  <div class="container">
+    <p>京ICP备2021005632号<a href=http://beian.qsis.cn>备案</a> Powerby <a href="https://swbj.qsis.cn/qsis.html" target="_blank">QsisCMS. Designed & Diveloped by <a href="https://swbj.qsis.cn/qiaoshuo.html" target="_blank">乔硕isher</a><a href="https://swbj.qsis.cn//verify.qsis.cn:88/" target="_blank">注册</a></p>
+    <p>&copy; 2026 深悟笔记 | 乔硕原创文章站. Powered by QSIS-SSG.</p>
+  </div>
+</div>
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
+
+
+<script>
+const prev = document.getElementById('prev')
+const next = document.getElementById('next')
+const curr = document.getElementById('curr')
+let page = 1
+const max = 3
+
+function update(){
+  prev.disabled = page === 1
+  next.disabled = page === max
+  curr.textContent = page
+}
+
+prev.onclick = () => { page--; update() }
+next.onclick = () => { page++; update() }
+update()
+</script>
+<script>
+// 加载搜索索引
+let searchIndex = [];
+
+async function loadSearchIndex() {
+  try {
+    const res = await fetch('/search-index.json');
+    searchIndex = await res.json();
+    console.log(`已加载 ${searchIndex.length} 篇文章用于搜索`);
+  } catch (err) {
+    console.error('搜索索引加载失败', err);
+  }
+}
+
+// 执行搜索
+function doSearch(keyword) {
+  const resultBox = document.getElementById('search-result');
+  resultBox.innerHTML = '';
+
+  if (!keyword.trim()) {
+    return;
+  }
+
+  const kw = keyword.toLowerCase();
+  const matched = searchIndex.filter(item => {
+    const title = (item.title || '').toLowerCase();
+    const content = (item.content || '').toLowerCase();
+    return title.includes(kw) || content.includes(kw);
+  });
+
+  if (matched.length === 0) {
+    resultBox.innerHTML = '<div class="no-result">没有找到相关文章</div>';
+    return;
+  }
+
+  let html = '';
+  matched.forEach(item => {
+    html += `
+<div class="search-item">
+  <a href="${item.url}" target="_blank">${item.title}</a>
+  <div class="desc">${item.content.substring(0, 120)}...</div>
+</div>
+    `;
+  });
+
+  resultBox.innerHTML = html;
+}
+
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+  loadSearchIndex();
+
+  const input = document.getElementById('search-input');
+  input.addEventListener('input', e => {
+    doSearch(e.target.value);
+  });
+});
+</script>
+<script>
+$(function(){
+    $('.qrcode').each(function(){
+        $(this).qrcode({
+            text: $(this).data('url'),
+            width: 100,
+            height: 100,
+            draw: false  
+        });
+    });
+});
+</script>
+	  <script>
+    window.location.replace("https://swbj.qsis.cn");
+  </script>
+</body>
+</html>
